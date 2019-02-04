@@ -14,8 +14,22 @@ Hello world, this is a test of my new website
 
 <div align="right">
 <form action="index.html">
-<input type="submit" value = "Log out">
-</div>
+<input type="submit" value = "Log out"></input>
+</form></div><br>
+
+<div align="center"> 
+<!--
+<form action="upload.html" method="POST">
+<input type = "submit" value="Upload image"></input></form>
+<form action="mylist.php" method="POST">
+<input type = "submit" value="My list"></input></form>
+<form action="editlist.html" method="POST">
+<input type = "submit" value="Edit list"></input></form>
+-->
+<form action="deleteitem.php" method="POST">
+<input type = "submit" value="My List"></input></form>
+</div><br>
+
 <?php
 session_start();
 echo "Welcome back, " . $_SESSION['username'] . "!";
