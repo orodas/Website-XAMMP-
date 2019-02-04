@@ -17,8 +17,8 @@ if (mysqli_connect_errno())
  
  mysqli_select_db($connect, "accounts"); //or ("Database not found");
  
- if ($result = mysqli_query($connect, "SELECT DATABASE()")) {
-    $row = mysqli_fetch_row($result);
+if ($result = mysqli_query($connect, "SELECT DATABASE()")) {
+	$row = mysqli_fetch_row($result);
     //printf("Default database is %s.\n", $row[0]);
     mysqli_free_result($result);
 }
