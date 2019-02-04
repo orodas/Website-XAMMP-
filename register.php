@@ -2,7 +2,6 @@
 
 $user = "";
 $password = "";
-
 $connect = mysqli_connect("localhost","root",$password);
 $inputuser = mysqli_real_escape_string($connect, $_POST['nuser']);
 $inputpass = mysqli_real_escape_string($connect, $_POST['npass']);
